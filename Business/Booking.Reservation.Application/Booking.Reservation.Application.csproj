@@ -12,4 +12,10 @@
     <Folder Include="Repository\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.CQRS\Booking.Infrastructure.CQRS.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.KafkaProducer\Booking.Infrastructure.KafkaProducer.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.Storage.RavenDB\Booking.Infrastructure.Storage.RavenDB.csproj" />
+  </ItemGroup>
+
 </Project>

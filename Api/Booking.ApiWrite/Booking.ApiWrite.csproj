@@ -4,5 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Booking.Management.Application\Booking.Management.Application.csproj" />
+    <ProjectReference Include="..\..\Business\Booking.Reservation.Application\Booking.Reservation.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.CQRS\Booking.Infrastructure.CQRS.csproj" />
+  </ItemGroup>
+
 
 </Project>

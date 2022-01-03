@@ -20,5 +20,11 @@
     <Folder Include="Repository\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.CQRS\Booking.Infrastructure.CQRS.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.KafkaConsumer\Booking.Infrastructure.KafkaConsumer.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.Storage.SqlServer\Booking.Infrastructure.Storage.SqlServer.csproj" />
+  </ItemGroup>
+
 
 </Project>
