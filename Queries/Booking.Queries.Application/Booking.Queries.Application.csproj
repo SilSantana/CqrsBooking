@@ -5,12 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Hotel\" />
-    <Folder Include="Repository\" />
-    <Folder Include="Reservation\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.CQRS\Booking.Infrastructure.CQRS.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.Storage.SqlServer\Booking.Infrastructure.Storage.SqlServer.csproj" />
   </ItemGroup>
