@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Booking.Infrastructure.CQRS.Queries;
+using System;
 
 namespace Booking.Queries.Application.Hotel.Query
 {
-    class RoomQuery
+    public class RoomQuery : IQuery
     {
+        public Guid HotelCode { get; }
+
+        public RoomQuery(Guid hotelCode)
+        {
+            HotelCode = hotelCode;
+        }
     }
 }

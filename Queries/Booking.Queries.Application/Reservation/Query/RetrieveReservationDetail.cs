@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Booking.Infrastructure.CQRS.Queries;
 
 namespace Booking.Queries.Application.Reservation.Query
 {
-    class RetrieveReservationDetail
+    public class RetrieveReservationDetail : IQuery
     {
+        public string ReservationCode { get; }
+
+        public RetrieveReservationDetail(string reservationCode)
+        {
+            ReservationCode = reservationCode;
+        }
     }
 }

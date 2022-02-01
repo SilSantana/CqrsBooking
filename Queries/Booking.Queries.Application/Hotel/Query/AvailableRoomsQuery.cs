@@ -1,10 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Booking.Infrastructure.CQRS.Queries;
+using System;
 
 namespace Booking.Queries.Application.Hotel.Query
 {
-    class AvailableRoomsQuery
+    public class AvailableRoomsQuery : IQuery
     {
+        public DateTime Checkin { get; }
+        public DateTime Checkout { get; }
+
+        public AvailableRoomsQuery(DateTime checkin, DateTime checkout)
+        {
+            Checkin = checkin;
+            Checkout = checkout;
+        }
     }
 }

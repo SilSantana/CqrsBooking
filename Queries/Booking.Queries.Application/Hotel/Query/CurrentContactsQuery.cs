@@ -1,10 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Booking.Infrastructure.CQRS.Queries;
+using System;
 
 namespace Booking.Queries.Application.Hotel.Query
 {
-    class CurrentContactsQuery
+    public class CurrentContactsQuery : IQuery
     {
+        public Guid HotelCode { get; }
+
+        public CurrentContactsQuery(Guid hotelCode)
+        {
+            HotelCode = hotelCode;
+        }
+
     }
 }
