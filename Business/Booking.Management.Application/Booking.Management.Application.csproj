@@ -5,10 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="Domain\" />
     <Folder Include="Handlers\" />
-    <Folder Include="Settings\" />
     <Folder Include="Repository\" />
   </ItemGroup>
 
