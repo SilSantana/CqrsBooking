@@ -1,8 +1,14 @@
 ﻿using Booking.Infrastructure.CQRS.Commands;
+using Booking.Infrastructure.CQRS.Events;
 using Booking.Infrastructure.Storage.RavenDB;
+using Booking.Reservation.Application.Commands;
+using Booking.Reservation.Application.Domain.Events;
+using Booking.Reservation.Application.Handlers;
+using Booking.Reservation.Application.Handlers.Events;
+using Booking.Reservation.Application.Repository;
 using Booking.Reservation.Application.Settings;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace Booking.Reservation.Application
 {
