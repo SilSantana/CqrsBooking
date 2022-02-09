@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Constants\" />
     <Folder Include="Converters\" />
     <Folder Include="BackgroundService\" />
     <Folder Include="Extensions\" />
