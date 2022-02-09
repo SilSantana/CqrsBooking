@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\Booking.Infrastructure.CQRS\Booking.Infrastructure.CQRS.csproj" />
     <ProjectReference Include="..\..\Queries\Booking.Queries.Application\Booking.Queries.Application.csproj" />
   </ItemGroup>
