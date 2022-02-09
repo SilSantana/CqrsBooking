@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\" />
-    <Folder Include="Handlers\" />
-    <Folder Include="Repository\" />
+    <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+    <PackageReference Include="MonoidSharpDotNet" Version="0.0.1" />
+    <PackageReference Include="RavenDB.Client" Version="5.3.100" />
   </ItemGroup>
 
   <ItemGroup>
