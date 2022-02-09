@@ -15,9 +15,16 @@
     <Folder Include="Constants\" />
     <Folder Include="Converters\" />
     <Folder Include="BackgroundService\" />
-    <Folder Include="Models\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Models\Events\" />
     <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Dapper.SimpleCRUD.NetCore" Version="1.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
   </ItemGroup>
 
   <ItemGroup>

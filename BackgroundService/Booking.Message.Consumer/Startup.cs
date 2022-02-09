@@ -1,5 +1,6 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -35,13 +36,17 @@ namespace Booking.Message.Consumer
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            app.Run(async (context) =>
             {
-                endpoints.MapControllers();
+                await context.Response.WriteAsync(@"
+                <html>
+                    <title>Emerging Booking</title>
+                <body>
+                    <h3>
+                        <center>Emerging Booking Kafka Message Streaming Consumer is now RUNNING...!</center>
+                    </h3>
+                </body>
+                </html>");
             });
         }
     }
