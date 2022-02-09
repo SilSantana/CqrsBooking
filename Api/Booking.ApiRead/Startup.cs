@@ -35,7 +35,7 @@ namespace Booking.ApiRead
             });
 
             services
-                //.RegisterInfrastructureCqrsDependencies(Configuration)
+                .RegisterInfrastructureCqrsDependencies(Configuration)
                 .RegisterQueriesApplicationDependencies(Configuration);
         }
 

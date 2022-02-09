@@ -2,7 +2,7 @@
 
 namespace Booking.Management.Application.Commands
 {
-    internal class CreateHotel : ICommand
+    public class CreateHotel : ICommand
     {
         public string Name { get; }
         public int StarsOfCategory { get; }
