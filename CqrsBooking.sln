@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackgroundService", "Backgr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queries", "Queries", "{CDDE829F-63A9-487E-AC9C-19569A702244}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{3523EE99-5F64-4E24-978A-D01E2BA4285C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{083C6236-153C-4245-AEAF-508736AB0DD3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Infrastructure.CQRS", "Infrastructure\Booking.Infrastructure.CQRS\Booking.Infrastructure.CQRS.csproj", "{63EBD5B8-2EA5-4CE4-96A6-3926C43ED1C5}"
@@ -40,6 +38,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Queries.Application", "Queries\Booking.Queries.Application\Booking.Queries.Application.csproj", "{9CD83179-C5AF-4FC9-B6B7-B57E27177DAE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingUI", "WebUI\BookingUI\BookingUI.csproj", "{82BEDA5E-8A28-4C08-853A-145220FDC5E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{2FE5B3C9-B0E5-4F97-84D1-424142A9BA2F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
