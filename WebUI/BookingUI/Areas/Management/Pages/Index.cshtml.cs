@@ -1,16 +1,25 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using BookingUI.ClientServices;
+using BookingUI.Models.Management;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BookingUI.Areas.Management.Pages
 {
     public class IndexModel : PageModel
     {
-        public void OnGet()
+        private readonly HotelReadService HotelReadService;
+
+        public IEnumerable<RegisteredHotel> Hotels { get; set; }
+
+        public IndexModel(HotelReadService hotelService)
         {
+            HotelReadService = hotelService;
+        }
+
+        public async Task OnGet()
+        {
+            Hotels = await HotelReadService.GetRegisteredHotels();
         }
     }
 }
